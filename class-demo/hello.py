@@ -2,12 +2,12 @@
 print('hello world')
 print("i am learning python programming language")
 
-# Declaring a variable
+# Declaring a variablee
 f_name = "Destiny"
 l_name = "Okpalaji"
 
 
-# Concatenating a variableee
+# Concatenating a variablee
 print(f_name + " " + l_name)
 
 age = 18
