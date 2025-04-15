@@ -130,3 +130,61 @@ except:
 
     #Else statement
     #Else is executed when there is an error
+try:
+    print("Hello")
+except:
+    print("An error occurred")
+else:
+    print("No error occurred")
+
+# Finally statement
+# The finally block is always executed, regardless of whether an error occurred or not
+try:
+    print(x)
+except:
+    print("An error occurred")
+finally:
+    print("x will not always executed as long as it's not defined.")
+
+# Practicalizing everything
+# We will create a file that is not writable and try to modify it.
+try:
+    f = open("demo.txt", "r") # Open a file in read mode
+    f = open("demo.txt", "w") # Open a file in write mode
+    try:
+        f.write("Hello world")
+    except:
+        print("Something went wrong when editing this file.")
+    finally:
+        f.close()
+except:
+    print("File not found")
+
+finally:
+    print("Any file that does not have write permission will not be able to be modified.")
+
+# If condiitional statement
+# If statement is used to check a condition
+# If the condition is true, the code inside the if block will be executed
+# If the condition is false, the code inside the else block will be executed
+
+age = input("Enter your age: ")
+if age < 18:
+    if age == 18:
+         print("You are 18 years old")
+         print("You are a minor")
+    else:
+        print("You are not a minor")
+elif age > 18:
+    print("You are an adult")
+else:
+    print("You are not an adult")
+
+
+sum = 10
+if sum < 10:
+    print("Sum is zero")
+elif sum >= 10:
+    print("Sum is positive")
+else:
+    print("Sum is negative")
